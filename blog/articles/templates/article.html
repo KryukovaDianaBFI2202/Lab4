@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+        <title>Архив статей</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ STATIC_URL }}/static/style.css">
+</head>
+
+<body class="style">
+	<div class="header">
+		<img src="https://sun9-37.userapi.com/impf/c836224/v836224254/2dad/SRwXb346T2Q.jpg?size=320x278&quality=96&sign=1cdd3720041838e5e3c2067504d0c3d5&c_uniq_tag=XqYtpqfZigMXnExzxmjfPQS-L5W60oeMsKMS7ViUvaY&type=album"> 
+	</div>
+
+	<div class="style">
+		<h2 class="post-title">{{ post.title }}</h2>
+		<div class="article-info">
+			<div class="article-author">{{ post.author.username }}</div>
+			<div class="article-created-date">{{ post.created_date }}</div>
+		</div>
+		<p class="article-text">{{ post.get_excerpt1 }}</p>
+	</div>
+</body>
